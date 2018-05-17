@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动端适配</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="practise.css">
+	<!-- <script>
+		document.documentElement.style.fontSize=innerWidth/16+"px"
+	</script> -->
+	<script>   
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;
+				if(clientWidth>=640){
+					docEl.style.fontSize = '100px';
+				}else{
+					docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+				}
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+	<header>
+		<ul class="nav">
+			<li><i class="iconfont icon-htmal5icon35"></i></li>
+			<li><i class="iconfont icon-keji"></i></li>
+			<li><i class="iconfont icon-shezhi"></i></li>
+		</ul>
+	</header>
+	<section>
+		<img src="img/logo.png" class="banner">
+		<div class="content">
+			<div class="part1">
+				<h3>中国航天火箭罕见发射失误，网友反应完全让人想不到</h3>
+				<p>中国青年报</p>
+			</div>
+			<div class="part1">
+				<h3>细思恐极! Facebook AI 失控 竟创造出一种秘密语言</h3>
+				<p>未来时间</p>
+			</div>
+			<div class="part1">
+				<h3>厉害了!全球超级计算机最新排行榜,中国再度震惊了世界</h3>
+				<p>新财迷</p>
+			</div>
+			<div class="part1">
+				<h3>细思恐极! Facebook AI 失控 竟创造出一种秘密语言</h3>
+				<p>未来时间</p>
+			</div>
+			<div class="part1">
+				<h3>细思恐极! Facebook AI 失控 竟创造出一种秘密语言</h3>
+				<p>未来时间</p>
+			</div>
+			<div class="part1">
+				<h3>细思恐极! Facebook AI 失控 竟创造出一种秘密语言</h3>
+				<p>未来时间</p>
+			</div>
+			<div class="part1">
+				<h3>细思恐极! Facebook AI 失控 竟创造出一种秘密语言</h3>
+				<p>未来时间</p>
+			</div>
+			<div class="part1">
+				<h3>细思恐极! Facebook AI 失控 竟创造出一种秘密语言</h3>
+				<p>未来时间</p>
+			</div>
+			<div class="part1">
+				<h3>细思恐极! Facebook AI 失控 竟创造出一种秘密语言</h3>
+				<p>未来时间</p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
